@@ -415,13 +415,13 @@ input[type="email"] {
 
 .text-3 {
     text-align: left;
-    padding-left: 35px;
+    padding-left: 45px;
 }
 
 .plus-style {
-    width: 18px;
-    height: 18px;
-    border: 3px black;
+    width: 35px;
+    height: 35px;
+    border: 5px black;
 }
 
 .plus-style-rotate {
@@ -500,7 +500,7 @@ input[type="email"] {
 }
   
 .info__headline {
-    padding-left: 30px;
+    padding-left: 45px;
     display: block;
     position: relative;
     margin-bottom: 15px;
