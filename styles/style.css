@@ -381,6 +381,7 @@ input[type="email"] {
 
 .thin-border-3 {
     width: 490px;
+    height: min-content;
     border: 1px solid #F4F4F6;
     border-radius: 20px;
     padding-top: 20px;
@@ -414,13 +415,13 @@ input[type="email"] {
 
 .text-3 {
     text-align: left;
-    padding-left: 45px;
+    padding-left: 35px;
 }
 
 .plus-style {
-    width: 30px;
-    height: 30px;
-    border-width: 3px;
+    width: 18px;
+    height: 18px;
+    border: 3px black;
 }
 
 .plus-style-rotate {
@@ -457,6 +458,71 @@ input[type="email"] {
 .white-text-in-orange-box {
     color: white;
 }
+
+/* ################################# */
+
+.info {
+    background-color: white;
+    padding: 10px 25px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.info__switch {
+    display: none;
+}
+  
+.info__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+  
+.info__switch:checked~.info__body {
+    max-height: 250px;
+}
+  
+.info__headline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 35px;
+    border: 6px solid black;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+  
+.info__switch:checked~.info__headline::before {
+    transform: rotate(180deg) translateY(6px);
+}
+  
+.info__headline {
+    padding-left: 30px;
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    user-select: none;
+    cursor: pointer;
+}
+  
+.info__headline:hover {
+    text-decoration: underline;
+}
+
+.background-div {
+    border: 1px solid #F4F4F6;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+/* ################################# */
 
 .footer {
     display: flex;
