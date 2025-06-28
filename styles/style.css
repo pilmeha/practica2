@@ -10,6 +10,132 @@ input[type="email"] {
     margin: 0;
 }
 
+/* PC */
+@media  screen and (min-width: 1024px) {
+    /* PC ON*/
+    .header-pc {
+        display: block
+    }
+
+    .main-pc {
+        display: block;
+    }
+
+    .footer-pc {
+        display: block;
+    }
+
+    /* TABLET OFF*/
+    .header-tablet {
+        display: none;
+    }
+
+    .main-tablet {
+        display: none;
+    }
+
+    .footer-tablet {
+        display: none;
+    }
+
+    /* MOBILE  OFF*/
+    .header-mobile {
+        display: none
+    }
+
+    .main-mobile {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+}
+
+/* TABLET */
+@media  screen and (min-width: 768px) {
+    /* PC OFF*/
+    .header-pc {
+        display: none;
+    }
+
+    .main-pc {
+        display: none;
+    }
+
+    .footer-pc {
+        display: none;
+    }
+
+    /* TABLET ON*/
+    .header-tablet {
+        display: block;
+    }
+
+    .main-tablet {
+        display: block;
+    }
+
+    .footer-tablet {
+        display: block;
+    }
+    
+    /* MOBILE  OFF*/
+    .header-mobile {
+        display: none
+    }
+
+    .main-mobile {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+}
+  
+/* MOBILE */
+@media  screen and (max-width: 525px) {
+    /* PC OFF*/
+    .header-pc {
+        display: none;
+    }
+
+    .main-pc {
+        display: none;
+    }
+
+    .footer-pc {
+        display: none;
+    }
+
+    /* TABLET OFF*/
+    .header-tablet {
+        display: none;
+    }
+
+    .main-tablet {
+        display: none;
+    }
+
+    .footer-tablet {
+        display: none;
+    }
+    
+    /* MOBILE  ON*/
+    .header-mobile {
+        display: block
+    }
+
+    .main-mobile {
+        display: block;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
+}
+
 .text400 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
